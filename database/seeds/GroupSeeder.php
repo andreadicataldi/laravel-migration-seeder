@@ -14,10 +14,10 @@ class GroupSeeder extends Seeder
     public function run(Faker $faker)
     {
         for ($i = 0; $i < 10; $i++) {
-            $newClassroom = new ClassRooms();
-            $newClassroom->name = $faker->name;
-            $newClassroom->capacity = $faker->numberBetween(20, 50);
-            $newClassroom->save();
+            $newGroup = new Group();
+            $newGroup->name = $faker->name;
+            $newGroup->capacity = $faker->numberBetween(20, 50);
+            $newGroup->save();
         }
     }
 }
